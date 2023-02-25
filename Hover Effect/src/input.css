@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer components {
+  button::before {
+    @apply absolute top-0 left-0 -z-10 h-72 w-72 bg-teal-400 content-none;
+    content: "";
+    transition: all 0.5s ease-in-out;
+    transform: translate(-105%, -25%) rotate(45deg);
+  }
+
+  button:hover::before {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+
+  .temp {
+    @apply bg-slate-100;
+  }
+}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+:root {
+  --COLOR1: hsl(195, 100%, 70%);
+  --COLOR2: hsl(18, 100%, 70%);
+  --COLOR3: hsl(122, 100%, 70%);
+}
+
+@layer components {
+  .delay-600 {
+    transition-duration: 0.6s;
+  }
+
+  .anime {
+    @apply absolute top-0 left-0 h-12 w-44 -translate-x-full transition-transform group-hover:translate-x-full;
+
+    transition-duration: 1.5s;
+  }
+}

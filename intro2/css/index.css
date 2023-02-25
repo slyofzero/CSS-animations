@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* || Custom CSS */
+@layer components {
+  body {
+    @apply h-screen capitalize bg-black text-white;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  section:has(.fancy:hover) *:not(.fancy:hover) {
+    @apply opacity-20;
+  }
+}

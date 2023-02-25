@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer components {
+  .circle {
+    transition: width 0.5s cubic-bezier(1, 0.28, 0, 0.92);
+  }
+
+  .text {
+    transition: color 0.5s cubic-bezier(1, 0.28, 0, 0.92);
+  }
+
+  .icon {
+    transition: transform 0.5s cubic-bezier(1, 0.28, 0, 0.92);
+  }
+
+  .arrow-head, .arrow {
+    &::after {
+      color: white;
+      content: "\276F";
+    }
+    transition: opacity 0.5s cubic-bezier(1, 0.28, 0, 0.92);
+  }
+
+  .arrow::after {
+    content: "\01f86a";
+  }
+}

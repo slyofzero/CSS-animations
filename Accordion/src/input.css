@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer components {
+    .rm-dom {
+        @apply absolute -left-96;
+    }
+
+    .items:first-child {
+        @apply bg-green-500;
+    }
+
+    .item {
+        @apply bg-sky-900 text-white cursor-pointer peer-hover:bg-slate-800 font-bold p-2 flex justify-between after:content-['\276F'] after:text-white peer-checked:after:rotate-90 peer-checked:after:transition-all;
+    }
+
+    .item-option {
+        @apply bg-white px-2 max-h-0 overflow-hidden peer-checked:max-h-full peer-checked:py-2 transition-all;
+    }
+
+    ul {
+        li:first-child {
+            label {
+                @apply rounded-t-md;
+            }
+        }
+
+        li:last-child {
+            label {
+                @apply rounded-b-md peer-checked:rounded-b-none;
+            }
+
+            p {
+                @apply rounded-b-md;
+            }
+        }
+    }
+}

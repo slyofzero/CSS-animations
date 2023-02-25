@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide animation</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="flex min-h-screen items-center justify-center bg-slate-100">
+    <button class="group relative flex h-auto w-48 items-center rounded-full">
+      <span
+        class="circle block h-12 w-12 rounded-full bg-black group-hover:w-full"
+      >
+        <span
+          class="icon relative flex h-12 w-12 items-center justify-center group-hover:translate-x-4"
+        >
+          <span
+            class="arrow-head absolute text-xl text-white opacity-100 group-hover:opacity-0"
+          ></span>
+
+          <span
+            class="arrow text-xl text-white opacity-0 group-hover:opacity-100"
+          ></span>
+        </span>
+      </span>
+
+      <span
+        class="text absolute left-0 right-0 ml-8 font-bold uppercase text-black group-hover:text-white"
+        >Learn More</span
+      >
+    </button>
+  </body>
+</html>

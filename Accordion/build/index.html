@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="min-h-screen bg-slate-100">
+    <main class="p-4 flex gap-4 justify-center">
+      <section>
+        <ul class="">
+          <li class="flex flex-col max-w-xs">
+            <input
+              type="checkbox"
+              name="multiple"
+              id="multiple-1"
+              class="rm-dom peer group"
+            />
+
+            <label for="multiple-1" class="item"> Item 1 </label>
+
+            <p class="item-option">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              dolore?
+            </p>
+          </li>
+
+          <li class="flex flex-col max-w-xs">
+            <input
+              type="checkbox"
+              name="multiple"
+              id="multiple-2"
+              class="rm-dom peer"
+            />
+
+            <label for="multiple-2" class="item">Item 2</label>
+
+            <p class="item-option">
+              Perspiciatis sapiente qui iure praesentium quas laudantium odio
+              eius sit molestias voluptatum.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <ul class="">
+          <li class="flex flex-col max-w-xs">
+            <input
+              type="radio"
+              name="single"
+              id="single-1"
+              class="rm-dom peer group"
+            />
+
+            <label for="single-1" class="item"> Item 1 </label>
+
+            <p class="item-option">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              dolore?
+            </p>
+          </li>
+
+          <li class="flex flex-col max-w-xs">
+            <input
+              type="radio"
+              name="single"
+              id="single-2"
+              class="rm-dom peer"
+            />
+
+            <label for="single-2" class="item">Item 2</label>
+
+            <p class="item-option">
+              Perspiciatis sapiente qui iure praesentium quas laudantium odio
+              eius sit molestias voluptatum.
+            </p>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              name="single"
+              id="single-3"
+              class="rm-dom peer"
+            />
+
+            <label
+              for="single-3"
+              class="peer-checked:bg-sky-900 hover:bg-slate-900 w-24 text-center text-white cursor-pointer px-2 bg-sky-900"
+            >
+              <span class="whitespace-nowrap">Close All</span>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

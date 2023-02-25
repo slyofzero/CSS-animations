@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer components {
+  .rm-dom {
+    @apply absolute -left-96;
+  }
+
+  /* Custom CSS */
+  /* For All */
+  label div {
+    @apply flex items-center justify-center font-bold uppercase text-white;
+    font-size: 0.65rem;
+  }
+
+  input:checked ~ label {
+    @apply bg-red-100;
+    div {
+      @apply bg-red-500;
+    }
+  }
+
+  /* For First */
+  #first ~ label div {
+    &::before {
+      @apply absolute top-1 content-['YES'];
+      left: 3px;
+    }
+
+    &::after {
+      @apply absolute top-1 opacity-0 content-['NO'];
+      left: 3px;
+    }
+  }
+
+  #first:checked ~ label {
+    div {
+      @apply translate-x-10 before:opacity-0 after:opacity-100;
+    }
+  }
+
+  /* For Second */
+  #second:checked ~ label {
+    div:first-child {
+      @apply -translate-x-full;
+    }
+
+    div:last-child {
+      @apply translate-x-0;
+    }
+  }
+
+  /* For Third */
+  #third ~ label div {
+    &::before {
+      @apply absolute top-1 content-['YES'];
+      left: 3px;
+    }
+
+    &::after {
+      @apply absolute top-1 opacity-0 content-['NO'];
+      left: 3px;
+    }
+  }
+
+  #third:checked ~ label {
+    div {
+      @apply translate-x-10 before:opacity-0 after:opacity-100;
+    }
+  }
+}

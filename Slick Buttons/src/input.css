@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Classes */
+@layer components {
+    .default-flex {
+        @apply flex flex-col gap-4;
+    }
+    
+    .green-element {
+        @apply bg-emerald-200 p-4 text-black;
+    }
+
+    /* To remove out of DOM */
+    .rm-dom {
+        @apply absolute left-rm-dom;
+    }
+
+    .rm-dom:checked ~ label div {
+        border: 8px double rgb(167 243 208);
+    }
+
+    .glow-on-hover {
+        @apply [&>*]:hover:text-gray-200 [&>*>*]:hover:border-gray-200 hover:border-b-gray-100
+    }
+}

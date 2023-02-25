@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Buttons</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="min-h-screen bg-slate-100">
+    <main class="p-8">
+      <ul class="grid grid-cols-3 gap-8">
+        <li
+          class="mx-auto flex h-auto w-32 items-center justify-center rounded-md bg-white p-6 shadow-md"
+        >
+          <input type="checkbox" name="" id="first" class="rm-dom" />
+
+          <label
+            for="first"
+            class="h-auto w-20 cursor-pointer rounded-full border-8 border-solid border-transparent bg-blue-100"
+          >
+            <div
+              class="relative h-6 w-6 rounded-full bg-blue-500 transition-all duration-300"
+            ></div>
+          </label>
+        </li>
+
+        <li
+          class="mx-auto flex h-auto w-32 items-center justify-center rounded-md bg-white p-6 shadow-md"
+        >
+          <input type="checkbox" name="" id="second" class="rm-dom" />
+
+          <label
+            for="second"
+            class="flex h-auto w-20 cursor-pointer justify-between overflow-hidden rounded-full border-8 border-solid border-transparent bg-blue-100"
+          >
+            <div
+              class="relative h-6 w-6 rounded-full bg-blue-500 transition-all duration-300"
+            >
+              Yes
+            </div>
+
+            <div
+              class="relative h-6 w-6 translate-x-full rounded-full bg-red-500 transition-all duration-300"
+            >
+              No
+            </div>
+          </label>
+        </li>
+
+        <li
+          class="mx-auto flex h-auto w-32 items-center justify-center rounded-md bg-white p-6 shadow-md"
+        >
+          <input type="checkbox" name="" id="third" class="rm-dom" />
+
+          <label
+            for="third"
+            class="h-auto w-20 cursor-pointer rounded-full border-8 border-solid border-transparent bg-blue-100"
+          >
+            <div
+              class="relative h-6 w-6 rounded-full bg-blue-500 transition-all duration-300"
+            ></div>
+          </label>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
